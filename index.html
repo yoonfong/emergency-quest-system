@@ -61,9 +61,9 @@ body {
   transition: opacity .35s ease, transform .35s ease;
   overflow: visible;
 }
-.screen.active   { opacity:1; transform:translateX(0);    position:relative; pointer-events:all; }
-.screen.hidden-left  { opacity:0; transform:translateX(-32px); pointer-events:none; }
-.screen.hidden-right { opacity:0; transform:translateX(32px);  pointer-events:none; }
+.screen.active   { opacity:1; transform:translateX(0); position:relative; pointer-events:all; visibility:visible; }
+.screen.hidden-left  { opacity:0; transform:translateX(-32px); pointer-events:none; visibility:hidden; position:absolute; }
+.screen.hidden-right { opacity:0; transform:translateX(32px);  pointer-events:none; visibility:hidden; position:absolute; }
 
 /* 전환 효과 오버레이 */
 .flash-overlay {
